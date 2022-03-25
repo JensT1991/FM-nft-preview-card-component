@@ -1,0 +1,163 @@
+/*====================
+table of contents
+
+1. imports
+2. variables
+3. reset
+4. styles
+5. attribution
+
+====================*/
+
+/*====================
+imports
+====================*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/*====================
+variables
+====================*/
+:root {
+    --color-soft-blue:  hsl(215, 51%, 70%);
+    --color-primary:    hsl(178, 100%, 50%);
+    --color-bg:         hsl(217, 54%, 11%);
+    --color-card:       hsl(216, 50%, 16%);
+    --color-line:       hsl(215, 32%, 27%);
+    --color-white:      hsl(0, 0%, 100%);
+
+    --font-family:  Outfit;
+
+    --font-size:    18px;
+    --font-size-h1: 24px;
+    
+    --font-weight-light:     300;
+    --font-weight-regular:   400;
+    --font-weight-semiBold:  600;
+
+    --line-height: 1.5;
+    --line-height-h: 1.2;
+}
+
+/*====================
+reset
+====================*/
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*====================
+styles
+====================*/
+body {
+    background-color: var(--color-bg);
+    color: var(--color-white);
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-light);
+    font-size: var(--font-size);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 24px;
+
+}
+
+.card {
+    background-color: var(--color-card);
+    border-radius: 20px;
+    max-width: 328px;
+    padding: 24px;
+    box-shadow: 0 10px 20px hsl(0deg 0% 0% / 60%);
+}
+
+.image-hero {
+    border-radius: 10px;
+    margin-bottom: 24px;
+    max-width: 278px;
+    height: auto;
+}
+
+h1 {
+    font-size: var(--font-size-h1);
+    font-weight: var(--font-weight-semiBold);
+    line-height: var(--);
+    margin-bottom: 16px;
+}
+
+p {
+    color: var(--color-soft-blue);
+    font-size: var(--font-size);
+    font-size: 15px;
+    font-weight: var(--font-weight-light);
+    margin-bottom: 16px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+.info .currency, .info .time {
+    display: flex;
+    align-items: center;
+}
+.info .currency {
+    color: var(--color-primary);
+    font-weight: var(--font-weight-semiBold);
+}
+.currency .icon {
+    width: 12px;
+    height: 19px;
+    margin-right: 8px;
+}
+.info .time {
+    color: var(--color-soft-blue);
+    font-weight: var(--font-weight-regular);
+}
+.time .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--color-line);
+    margin-block: 16px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+}
+.author .avatar {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    border: 2px solid var(--color-white);
+    margin-right: 16px;
+}
+.author p {
+    margin-bottom: 0;
+}
+.author .name {
+    color: var(--color-white);
+}
+
+/*====================
+attribution
+====================*/
+.attribution { 
+    position: absolute;
+    bottom: 24px;
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
